@@ -32,7 +32,7 @@ for i in range(2):
             features = kmeans.cluster_centers_
         else:
             features = np.vstack((features, kmeans.cluster_centers_))
-    target = np.hstack((target, t[i]*np.ones(20)))
+    target = np.hstack((target, t[i]*np.ones(4*len(files))))
 
 #features,target = randoming(features,target)
 file = open("pygender/train_data/dataset.txt","w")
